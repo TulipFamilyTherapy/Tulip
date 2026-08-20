@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design system — Tulip Family Therapy</title>
+<meta name="description" content="The Tulip visual identity: colours, type, and the two signature devices that separate practice pages from programme pages.">
+<meta name="theme-color" content="#15506F">
+<script>document.documentElement.className+=" js-on";</script>
+<link rel="icon" href="assets/Symbol.svg">
+<link rel="stylesheet" href="assets/tulip.css">
+<style>
+.page-hero{background:var(--cream);padding-block:clamp(2.5rem,6vw,4.5rem) clamp(2.5rem,6vw,4rem)}
+.page-hero h1{font-size:var(--s-4);max-width:15ch;margin-bottom:1.3rem}
+.crumb{font-size:var(--s--1);letter-spacing:.14em;text-transform:uppercase;color:rgba(21,80,111,.6);margin-bottom:1.4rem}
+.crumb a{text-decoration:none}
+.swatches{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem;margin-top:1.5rem}
+.sw{border:1px solid var(--line);border-radius:2px;overflow:hidden;background:var(--paper)}
+.sw i{display:block;height:82px}
+.sw div{padding:.7rem .85rem}
+.sw b{display:block;font-size:var(--s--1);font-weight:600}
+.sw code{font-size:var(--s--1);color:rgba(21,80,111,.72);font-family:ui-monospace,monospace}
+.sw span{display:block;font-size:.72rem;color:rgba(21,80,111,.7);margin-top:.3rem;line-height:1.4}
+.device{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(1.5rem,4vw,3rem);
+  align-items:center;padding:clamp(1.5rem,3vw,2.25rem);border:1px solid var(--line);
+  border-left:3px solid var(--gold);background:var(--paper);margin-top:1.5rem}
+.device h3{font-size:var(--s-2);margin-bottom:.5rem}
+.device .use{margin:1.2rem 0 0;padding:0;list-style:none}
+.device .use li{font-size:var(--s--1);padding:.45rem 0;border-top:1px solid var(--line);color:rgba(21,80,111,.86)}
+.demo{position:relative;height:230px;border-radius:2px;overflow:hidden;border:1px solid var(--line)}
+.demo-rip{background:var(--cream);display:block}
+.demo-rip svg{position:absolute;top:50%;right:0;transform:translate(46%,-50%);height:520px;overflow:visible}
+.rg{fill:none}.rg-gold{stroke:var(--gold)}.rg-goldpale{stroke:var(--gold-3)}.rg-slate{stroke:var(--slate)}
+.demo-hz{background:var(--cream)}
+.demo-hz .sky{height:52%}
+.demo-hz .earth{height:48%;background:var(--ink);position:relative}
+.demo-hz .tul{position:absolute;bottom:48%;right:22%;width:62px}
+.demo-hz .rts{position:absolute;top:0;left:0;right:0;height:74px;opacity:.5}
+.type-row{display:grid;grid-template-columns:minmax(0,10rem) minmax(0,1fr);gap:1.5rem;
+  padding:1.1rem 0;border-top:1px solid var(--line);align-items:baseline}
+.type-row b{font-size:var(--s--1);font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.dont{border-left-color:var(--rose)}
+.rules{margin:1.5rem 0 0;padding:0;list-style:none;
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
+.rules li{border-top:2px solid var(--gold);padding-top:.9rem;font-size:var(--s--1);color:rgba(21,80,111,.86)}
+.rules li b{display:block;font-size:var(--s-0);color:var(--ink);margin-bottom:.3rem}
+@media(max-width:900px){.device{grid-template-columns:minmax(0,1fr)}.type-row{grid-template-columns:minmax(0,1fr);gap:.3rem}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="brand" href="index.html" aria-label="Tulip Family Therapy, home"><img width="608" height="305" src="assets/Logo.svg" alt=""></a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span></button>
+    <nav class="nav" id="nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="programmes/roots-and-wings/index.html">Roots and Wings</a>
+      <a href="brand.html" aria-current="page">Design system</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumb"><a href="index.html">Tulip Family Therapy</a> &nbsp;&rsaquo;&nbsp; Design system</p>
+      <p class="eyebrow">Internal reference</p>
+      <h1>Two devices. Never both on one page.</h1>
+      <p class="lede muted">This page exists so the identity survives the next programme, and the one
+      after that. Everything below is already in use. If a new page is built, it should take one of
+      the two devices and nothing else.</p>
+    </div>
+  </section>
+
+  <section class="sec on-paper">
+    <div class="wrap">
+      <div class="sec-head"><p class="eyebrow">The signatures</p>
+        <h2>The ripple, and the horizon.</h2>
+        <p class="lede muted">Tulip has two visual devices and they carry different meanings. Keeping
+        them apart is what stops the practice and its programmes blurring into each other.</p></div>
+
+      <div class="device">
+        <div>
+          <p class="eyebrow">Device one</p>
+          <h3>The Ripple</h3>
+          <p class="muted">Concentric arcs widening from the right edge. It stands for reach: the work
+          spreading outward from one family to a school, a congregation, an institution. It is quiet,
+          it sits behind the type, and it never crosses a headline.</p>
+          <ul class="use">
+            <li>Use on: the practice. Home, services, about, contact</li>
+            <li>Colours: gold, pale gold and slate, on cream</li>
+            <li>Position: centred off the right edge, masked out on the left</li>
+            <li>Opacity: about 0.6 on desktop, 0.4 on mobile</li>
+          </ul>
+        </div>
+        <div class="demo demo-rip">
+          <svg viewBox="-800 0 1600 600" preserveAspectRatio="xMinYMid meet" aria-hidden="true">
+            <circle cx="0" cy="300" r="150" class="rg rg-gold" stroke-opacity=".9" stroke-width="7"/>
+            <circle cx="0" cy="300" r="184" class="rg rg-slate" stroke-opacity=".55" stroke-width="3"/>
+            <circle cx="0" cy="300" r="231" class="rg rg-goldpale" stroke-opacity=".8" stroke-width="11"/>
+            <circle cx="0" cy="300" r="291" class="rg rg-gold" stroke-opacity=".45" stroke-width="3"/>
+            <circle cx="0" cy="300" r="364" class="rg rg-slate" stroke-opacity=".35" stroke-width="6"/>
+            <circle cx="0" cy="300" r="450" class="rg rg-goldpale" stroke-opacity=".55" stroke-width="3"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="device">
+        <div>
+          <p class="eyebrow">Device two</p>
+          <h3>The Horizon</h3>
+          <p class="muted">Cream above, deep teal below, the tulip sitting on the line with its roots
+          growing down into the dark. It stands for roots and wings, belonging and becoming. It also
+          reproduces the printed workbook cover, so book and screen read as one object.</p>
+          <ul class="use">
+            <li>Use on: programme pages only. Roots and Wings, and whatever follows it</li>
+            <li>The tulip always sits on the line, never floating above it</li>
+            <li>Roots grow downward once on load, then never move again</li>
+            <li>Keep text clear of the roots by the full root height plus a margin</li>
+          </ul>
+        </div>
+        <div class="demo demo-hz" aria-hidden="true">
+          <div class="sky"></div>
+          <div class="earth">
+            <svg class="rts" viewBox="0 0 400 74" preserveAspectRatio="none">
+              <g fill="none" stroke="#DCA41F" stroke-width="1.4" stroke-linecap="round">
+                <path d="M20,0 C22,22 14,36 10,58"/><path d="M60,0 C58,20 66,34 70,56"/>
+                <path d="M110,0 C112,24 104,38 100,62"/><path d="M160,0 C158,18 166,32 172,54"/>
+                <path d="M210,0 C212,22 204,36 200,60"/><path d="M262,0 C260,20 268,34 274,52"/>
+                <path d="M312,0 C314,24 306,38 302,58"/><path d="M362,0 C360,18 368,32 374,56"/>
+              </g></svg>
+            <img class="tul" width="412" height="359" src="assets/Symbol.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <ul class="rules">
+        <li><b>One device per page</b>Never place the ripple and the horizon on the same page. That was the original mistake and it made the homepage read as a programme page.</li>
+        <li><b>Programmes get the horizon</b>A future programme sitting beside Roots and Wings inherits the horizon, with its own title and colour emphasis.</li>
+        <li><b>The practice gets the ripple</b>Anything describing Tulip itself rather than a programme takes the ripple.</li>
+        <li><b>Neither device carries text</b>Both sit behind the content at low opacity. If a device fights a headline, move the device, not the headline.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec on-cream">
+    <div class="wrap">
+      <div class="sec-head"><p class="eyebrow">Colour</p><h2>Sampled from the logo, not guessed.</h2>
+        <p class="lede muted">The two brand inks were read directly out of the vector logo files, so
+        screen and print match exactly.</p></div>
+      <div class="swatches">
+        <div class="sw"><i style="background:#15506F"></i><div><b>Ink</b><code>#15506F</code><span>Primary teal. Body text, dark grounds</span></div></div>
+        <div class="sw"><i style="background:#0E3A52"></i><div><b>Ink deep</b><code>#0E3A52</code><span>Contact and footer</span></div></div>
+        <div class="sw"><i style="background:#DCA41F"></i><div><b>Gold</b><code>#DCA41F</code><span>Accent, eyebrows, rules, roots</span></div></div>
+        <div class="sw"><i style="background:#EFC463"></i><div><b>Gold light</b><code>#EFC463</code><span>Gold used on dark grounds</span></div></div>
+        <div class="sw"><i style="background:#FBF3E2"></i><div><b>Cream</b><code>#FBF3E2</code><span>Warm section ground</span></div></div>
+        <div class="sw"><i style="background:#FDF9F0"></i><div><b>Paper</b><code>#FDF9F0</code><span>Default page ground</span></div></div>
+        <div class="sw"><i style="background:#8FA8B4"></i><div><b>Slate</b><code>#8FA8B4</code><span>Ripple only, never text</span></div></div>
+        <div class="sw"><i style="background:#CE4E6B"></i><div><b>Rose</b><code>#CE4E6B</code><span>Held in reserve. Estimated, not sampled</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec on-paper">
+    <div class="wrap">
+      <div class="sec-head"><p class="eyebrow">Type</p><h2>Two families, three jobs.</h2>
+        <p class="lede muted">The brand face is Mazzard H SemiBold, used in the logo. It is not
+        licensed for the web, so Poppins stands in as its closest free relative. If a licence is
+        bought, swap the font files and change nothing else.</p></div>
+      <div style="border-bottom:1px solid var(--line)">
+        <div class="type-row"><b>Display</b><div style="font-size:var(--s-3);font-weight:600">Where families learn to hear one another again.</div></div>
+        <div class="type-row"><b>Voice</b><div class="voice" style="font-size:var(--s-2);color:var(--gold)">Growing secure, confident, connected families.</div></div>
+        <div class="type-row"><b>Body</b><div class="muted">Poppins Light and Regular for reading. Lora Italic is reserved for Patricia&rsquo;s own words and for programme subtitles. Never set a paragraph in Lora.</div></div>
+        <div class="type-row"><b>Label</b><div class="eyebrow" style="margin:0">Eyebrows are Poppins 600, tracked 0.24em, uppercase, gold</div></div>
+      </div>
+      <p class="muted" style="margin-top:1.5rem">All six font files are self hosted in
+      <code>assets/fonts</code> and total 77 KB. There is no request to Google, which keeps the site
+      fast on a mobile connection and removes a third party dependency.</p>
+    </div>
+  </section>
+
+  <section class="sec contact">
+    <div class="wrap">
+      <p class="eyebrow on-dark">Adding a new programme</p>
+      <h2 class="voice" style="max-width:26ch">Copy the Roots and Wings page. Keep the horizon. Change everything else.</h2>
+      <p class="muted-d" style="margin-top:1.2rem;max-width:60ch">Each programme gets its own folder
+      under <code>programmes/</code> with its own <code>index.html</code>. It inherits the horizon,
+      the header, the footer and <code>assets/tulip.css</code>. Full instructions are in
+      <code>GITHUB_GUIDE.html</code> in the same folder as this site.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+    <div class="wrap foot-in">
+    <img loading="lazy" decoding="async" width="608" height="305" src="assets/White_Logo.svg" alt="Tulip Family Therapy">
+    <address class="foot-nap">
+      <b>Tulip Family Therapy</b>
+      Thindigua, Kiambu Road, Nairobi, Kenya<br>
+      <a href="tel:+254780668888">+254 780 668 888</a> &middot;
+      <a href="mailto:patricia.tulip@outlook.com">patricia.tulip@outlook.com</a><br>
+      Sessions in person and online
+    </address>
+    <p>&copy; 2026 Tulip Family Therapy. Growing secure, confident, connected families.</p>
+  </div>
+</footer>
+<script src="assets/tulip.js"></script>
+</body>
+</html>
