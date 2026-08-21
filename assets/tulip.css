@@ -220,3 +220,20 @@ a.stream:hover{background:rgba(251,243,226,.06);padding-inline:.7rem}
   .sec,.svc-sec,.stream-sec{padding-block:1rem;page-break-inside:avoid}
   a[href^="http"]::after{content:" (" attr(href) ")";font-size:9pt;color:#444}
 }
+
+
+/* ---------- floating WhatsApp ---------- */
+.wa-float{position:fixed;right:clamp(1rem,3vw,2rem);bottom:clamp(1rem,3vw,2rem);z-index:60;
+  display:inline-flex;align-items:center;gap:.6rem;padding:.85rem 1.15rem;border-radius:100px;
+  background:#25D366;color:#0a3d1e;text-decoration:none;font-weight:600;font-size:var(--s--1);
+  box-shadow:0 8px 24px rgba(0,0,0,.22);transition:transform .2s ease,box-shadow .2s ease;
+  border:2px solid rgba(255,255,255,.9)}
+.wa-float:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(0,0,0,.28)}
+.wa-float svg{width:22px;height:22px;flex:none;fill:#0a3d1e}
+.wa-float .wa-label{white-space:nowrap}
+@media(max-width:560px){
+  .wa-float{padding:.9rem;gap:0}
+  .wa-float .wa-label{display:none}
+  .wa-float svg{width:24px;height:24px}
+}
+@media print{.wa-float{display:none}}
