@@ -126,10 +126,14 @@ function saveRow(cb){
     mockSave(db); state.rowId = (i>=0?db[i].id:row.id);
     remember(); if(cb)cb(null); return;
   }
-  var c = client();
-  c.from('responses').insert([row]).select().then(function(res){
+  var c = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY, {
+    auth:{ persistSession:false, autoRefreshToken:false, storageKey:'rw-'+state.role }
+  });
+  c.rpc('save_entry', {
+    p_code: state.code, p_role: state.role,
+    p_context: state.answers, p_baseline: state.scales
+  }).then(function(res){
     if(res.error){ if(cb)cb(res.error); return; }
-    state.rowId = res.data && res.data[0] && res.data[0].id;
     remember(); if(cb)cb(null);
   });
 }
